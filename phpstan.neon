@@ -1,0 +1,14 @@
+parameters:
+	level: 9
+	paths:
+		- src
+		- tests
+	bootstrapFiles:
+		- vendor/codeigniter4/framework/system/Test/bootstrap.php
+	scanDirectories:
+		- vendor/codeigniter4/framework/system/Helpers
+	codeigniter:
+		additionalConfigNamespaces:
+			- CodeIgniterIconify\Config
+		additionalServices:
+			- CodeIgniterIconify\Config\Services

@@ -1,0 +1,55 @@
+{
+  "name": "yassinedoghri/codeigniter-iconify",
+  "description": "A CodeIgniter4 library with convenient helper functions to render svg icons using php-iconify.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CodeIgniterIconify\\": "src/"
+    }
+  },
+  "keywords": [
+    "codeigniter",
+    "codeigniter4",
+    "icons",
+    "iconify"
+  ],
+  "authors": [
+    {
+      "name": "Yassine Doghri",
+      "email": "yassine@doghri.fr",
+      "homepage": "https://yassinedoghri.com",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "yassinedoghri/php-iconify": "dev-develop"
+  },
+  "require-dev": {
+    "codeigniter/phpstan-codeigniter": "^v1.4.3",
+    "codeigniter4/devkit": "^v1.2.1",
+    "codeigniter4/framework": "^4.3.5",
+    "phpstan/extension-installer": "^1.3.1",
+    "phpstan/phpstan": "^1.10.65",
+    "rector/rector": "^1.0.3",
+    "symplify/coding-standard": "^11.4.1",
+    "symplify/easy-coding-standard": "^11.5.0"
+  },
+  "scripts": {
+    "dev": "php -S 0.0.0.0:8080",
+    "analyse": "vendor/bin/phpstan analyse --ansi",
+    "rector": "vendor/bin/rector process --dry-run --ansi",
+    "rector:fix": "vendor/bin/rector process --ansi",
+    "style": "vendor/bin/ecs check --ansi",
+    "style:fix": "vendor/bin/ecs check --fix --ansi"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    },
+    "sort-packages": true
+  }
+}
