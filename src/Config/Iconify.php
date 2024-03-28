@@ -14,4 +14,6 @@ class Iconify extends BaseConfig
     public array $apiHosts = [];
 
     public string $iconsFolder = APPPATH . 'Resources/icons';
+
+    public string $defaultPack = '';
 }

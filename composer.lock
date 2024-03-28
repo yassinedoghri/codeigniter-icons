@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "783f04e0e6bc742b00739d113909929a",
+  "content-hash": "b46da160ff9c2204c962187c631420f7",
   "packages": [
     {
       "name": "yassinedoghri/php-iconify",
@@ -12,12 +12,12 @@
       "source": {
         "type": "git",
         "url": "https://github.com/yassinedoghri/php-iconify.git",
-        "reference": "5aa4aa5da6ade6aa449238d6e34f0c0efbd8007d"
+        "reference": "cd5b169c9ad928ffac4d01bcfb439090026e9f9c"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/yassinedoghri/php-iconify/zipball/5aa4aa5da6ade6aa449238d6e34f0c0efbd8007d",
-        "reference": "5aa4aa5da6ade6aa449238d6e34f0c0efbd8007d",
+        "url": "https://api.github.com/repos/yassinedoghri/php-iconify/zipball/cd5b169c9ad928ffac4d01bcfb439090026e9f9c",
+        "reference": "cd5b169c9ad928ffac4d01bcfb439090026e9f9c",
         "shasum": ""
       },
       "require-dev": {
@@ -51,7 +51,7 @@
         "issues": "https://github.com/yassinedoghri/php-iconify/issues",
         "source": "https://github.com/yassinedoghri/php-iconify/tree/develop"
       },
-      "time": "2024-03-26T14:45:40+00:00"
+      "time": "2024-03-28T14:50:34+00:00"
     }
   ],
   "packages-dev": [
@@ -351,16 +351,16 @@
     },
     {
       "name": "codeigniter4/devkit",
-      "version": "v1.2.1",
+      "version": "v1.2.2",
       "source": {
         "type": "git",
         "url": "https://github.com/codeigniter4/devkit.git",
-        "reference": "78caaaf043f4ad5e539b2936e1fdf2c89f6f58ce"
+        "reference": "95886271e649ccd8c79dace77c87571709dc1d03"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/codeigniter4/devkit/zipball/78caaaf043f4ad5e539b2936e1fdf2c89f6f58ce",
-        "reference": "78caaaf043f4ad5e539b2936e1fdf2c89f6f58ce",
+        "url": "https://api.github.com/repos/codeigniter4/devkit/zipball/95886271e649ccd8c79dace77c87571709dc1d03",
+        "reference": "95886271e649ccd8c79dace77c87571709dc1d03",
         "shasum": ""
       },
       "require": {
@@ -409,9 +409,9 @@
       ],
       "support": {
         "issues": "https://github.com/codeigniter4/devkit/issues",
-        "source": "https://github.com/codeigniter4/devkit/tree/v1.2.1"
+        "source": "https://github.com/codeigniter4/devkit/tree/v1.2.2"
       },
-      "time": "2024-02-22T12:25:10+00:00"
+      "time": "2024-03-24T10:40:54+00:00"
     },
     {
       "name": "codeigniter4/framework",
@@ -642,16 +642,16 @@
     },
     {
       "name": "composer/xdebug-handler",
-      "version": "3.0.3",
+      "version": "3.0.4",
       "source": {
         "type": "git",
         "url": "https://github.com/composer/xdebug-handler.git",
-        "reference": "ced299686f41dce890debac69273b47ffe98a40c"
+        "reference": "4f988f8fdf580d53bdb2d1278fe93d1ed5462255"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/ced299686f41dce890debac69273b47ffe98a40c",
-        "reference": "ced299686f41dce890debac69273b47ffe98a40c",
+        "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/4f988f8fdf580d53bdb2d1278fe93d1ed5462255",
+        "reference": "4f988f8fdf580d53bdb2d1278fe93d1ed5462255",
         "shasum": ""
       },
       "require": {
@@ -662,7 +662,7 @@
       "require-dev": {
         "phpstan/phpstan": "^1.0",
         "phpstan/phpstan-strict-rules": "^1.1",
-        "symfony/phpunit-bridge": "^6.0"
+        "phpunit/phpunit": "^8.5 || ^9.6 || ^10.5"
       },
       "type": "library",
       "autoload": {
@@ -686,9 +686,9 @@
         "performance"
       ],
       "support": {
-        "irc": "irc://irc.freenode.org/composer",
+        "irc": "ircs://irc.libera.chat:6697/composer",
         "issues": "https://github.com/composer/xdebug-handler/issues",
-        "source": "https://github.com/composer/xdebug-handler/tree/3.0.3"
+        "source": "https://github.com/composer/xdebug-handler/tree/3.0.4"
       },
       "funding": [
         {
@@ -704,7 +704,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2022-02-25T21:32:43+00:00"
+      "time": "2024-03-26T18:29:49+00:00"
     },
     {
       "name": "dnoegel/php-xdg-base-dir",
@@ -2840,12 +2840,12 @@
       "source": {
         "type": "git",
         "url": "https://github.com/Roave/SecurityAdvisories.git",
-        "reference": "98cbbfa55bafb0368a60a5fd6206f07c9dd782eb"
+        "reference": "a2c33d8cc3719997b91b628eec3570d725cebf7e"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/98cbbfa55bafb0368a60a5fd6206f07c9dd782eb",
-        "reference": "98cbbfa55bafb0368a60a5fd6206f07c9dd782eb",
+        "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a2c33d8cc3719997b91b628eec3570d725cebf7e",
+        "reference": "a2c33d8cc3719997b91b628eec3570d725cebf7e",
         "shasum": ""
       },
       "conflict": {
@@ -3256,7 +3256,7 @@
         "pimcore/demo": "<10.3",
         "pimcore/ecommerce-framework-bundle": "<1.0.10",
         "pimcore/perspective-editor": "<1.5.1",
-        "pimcore/pimcore": "<11.1.1",
+        "pimcore/pimcore": "<11.1.6.1-dev|>=11.2,<11.2.2",
         "pixelfed/pixelfed": "<0.11.11",
         "plotly/plotly.js": "<2.25.2",
         "pocketmine/bedrock-protocol": "<8.0.2",
@@ -3422,7 +3422,7 @@
         "thinkcmf/thinkcmf": "<=5.1.7",
         "thorsten/phpmyfaq": "<3.2.2",
         "tikiwiki/tiki-manager": "<=17.1",
-        "tinymce/tinymce": "<5.10.9|>=6,<6.7.3",
+        "tinymce/tinymce": "<7",
         "tinymighty/wiki-seo": "<1.2.2",
         "titon/framework": "<9.9.99",
         "tobiasbg/tablepress": "<=2.0.0.0-RC1",
@@ -3575,7 +3575,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2024-03-25T20:04:17+00:00"
+      "time": "2024-03-26T22:04:37+00:00"
     },
     {
       "name": "sebastian/cli-parser",
@@ -6292,7 +6292,7 @@
   "prefer-stable": true,
   "prefer-lowest": false,
   "platform": {
-    "php": "^8.1"
+    "php": ">=8.1"
   },
   "platform-dev": [],
   "plugin-api-version": "2.6.0"

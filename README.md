@@ -28,7 +28,7 @@ composer require yassinedoghri/codeigniter-iconify
 
 ### 2. Setup
 
-Add iconify helper to the app/Config/Autoload.php file:
+Add iconify helper to the `app/Config/Autoload.php` file:
 
 ```php
 public $helpers = [/*...other helpers...*/, 'iconify'];
@@ -57,7 +57,30 @@ Use the `icon()` or `iconify()` helpers in your View files to render svg icons:
 // </svg>
 ```
 
-## Configuration
+#### Default Icon Pack
+
+> [!TIP]  
+> Using a consistent icon style throughout your app can help create a cohesive
+> look and feel.
+
+This can be achieved by setting a default icon pack in your config
+([see configuration below](#configuration)).
+
+```php
+// your app/Config/Iconify.php config file
+//...
+public $defaultPack = "material-symbols";
+//...
+```
+
+This way, no need to specify the icon pack when using the helpers!
+
+```diff
+-<?= icon('material-symbols:bolt'); ?>
++<?= icon('bolt'); ?>
+```
+
+## ⚙️ Configuration
 
 By default, CodeIgniter Iconify will use Iconify's public APIs to download icons
 and cache them into the `app/Resources/icons` folder. You may overwrite this
@@ -78,6 +101,7 @@ class Iconify extends CodeIgniterIconify
 {
     public $apiHosts = [];
     public $iconsFolder = APPPATH . 'Resources/icons';
+    public $defaultPack = "";
 }
 ```
 
