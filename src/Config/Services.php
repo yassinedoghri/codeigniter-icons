@@ -20,9 +20,14 @@ class Services extends BaseService
         /** @var IconifyConfig $config */
         $config = config('Iconify');
 
-        return new Iconify([
-            'api_hosts'    => $config->apiHosts,
+        $options = [
             'icons_folder' => $config->iconsFolder,
-        ]);
+        ];
+
+        if ($config->apiHosts !== []) {
+            $options['api_hosts'] = $config->apiHosts;
+        }
+
+        return new Iconify($options);
     }
 }
