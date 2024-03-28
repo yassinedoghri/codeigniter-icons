@@ -22,6 +22,7 @@ class Services extends BaseService
 
         $options = [
             'icons_folder' => $config->iconsFolder,
+            'default_pack' => $config->defaultPack,
         ];
 
         if ($config->apiHosts !== []) {

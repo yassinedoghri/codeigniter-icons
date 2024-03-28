@@ -39,19 +39,19 @@ public $helpers = [/*...other helpers...*/, 'iconify'];
 Use the `icon()` or `iconify()` helpers in your View files to render svg icons:
 
 ```php
-<?= icon('material-symbols:bolt'); ?>
+<?= icon('material-symbols:bolt') ?>
 // <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 //      <path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z"/>
 // </svg>
 
-<?= icon('material-symbols:bolt', ['class' => 'text-2xl', "style" => "color: yellow;"]); ?>
+<?= icon('material-symbols:bolt', ['class' => 'text-2xl', "style" => "color: yellow;"]) ?>
 // <svg class="text-2xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 //      <path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z"/>
 // </svg>
 
 <?= iconify('material-symbols:bolt')
         ->attr('class', 'text-2xl')
-        ->attr('style', 'color: yellow;'); ?>
+        ->attr('style', 'color: yellow;') ?>
 // <svg class="text-2xl" style="color: yellow;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 //      <path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z"/>
 // </svg>
@@ -63,8 +63,8 @@ Use the `icon()` or `iconify()` helpers in your View files to render svg icons:
 > Using a consistent icon style throughout your app can help create a cohesive
 > look and feel.
 
-This can be achieved by setting a default icon pack in your config
-([see configuration below](#configuration)).
+👉 This can be achieved by setting a default icon pack in your config
+([see configuration below](#⚙️-configuration)).
 
 ```php
 // your app/Config/Iconify.php config file
@@ -76,8 +76,8 @@ public $defaultPack = "material-symbols";
 This way, no need to specify the icon pack when using the helpers!
 
 ```diff
--<?= icon('material-symbols:bolt'); ?>
-+<?= icon('bolt'); ?>
+-<?= icon('material-symbols:bolt') ?>
++<?= icon('bolt') ?>
 ```
 
 ## ⚙️ Configuration
