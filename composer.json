@@ -1,11 +1,11 @@
 {
-  "name": "yassinedoghri/codeigniter-iconify",
-  "description": "A CodeIgniter4 library with convenient helper functions to render svg icons using php-iconify.",
+  "name": "yassinedoghri/codeigniter-icons",
+  "description": "A CodeIgniter4 library with convenient helper functions to render svg icons using yassinedoghri/php-icons.",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "CodeIgniterIconify\\": "src/"
+      "CodeIgniterIcons\\": "src/"
     }
   },
   "keywords": [
@@ -24,17 +24,17 @@
   ],
   "require": {
     "php": ">=8.1",
-    "yassinedoghri/php-iconify": "dev-develop"
+    "yassinedoghri/php-icons": "dev-develop"
   },
   "require-dev": {
     "codeigniter/phpstan-codeigniter": "^v1.4.3",
-    "codeigniter4/devkit": "^v1.2.1",
+    "codeigniter4/devkit": "^v1.2.2",
     "codeigniter4/framework": "^4.3.5",
     "phpstan/extension-installer": "^1.3.1",
-    "phpstan/phpstan": "^1.10.65",
-    "rector/rector": "^1.0.3",
-    "symplify/coding-standard": "^11.4.1",
-    "symplify/easy-coding-standard": "^11.5.0"
+    "phpstan/phpstan": "^1.10.66",
+    "rector/rector": "^1.0.4",
+    "symplify/coding-standard": "^12.1.4",
+    "symplify/easy-coding-standard": "^12.1.14"
   },
   "scripts": {
     "dev": "php -S 0.0.0.0:8000",

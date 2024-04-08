@@ -9,6 +9,6 @@ parameters:
 		- vendor/codeigniter4/framework/system/Helpers
 	codeigniter:
 		additionalConfigNamespaces:
-			- CodeIgniterIconify\Config
+			- CodeIgniterIcons\Config
 		additionalServices:
-			- CodeIgniterIconify\Config\Services
+			- CodeIgniterIcons\Config\Services

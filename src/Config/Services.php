@@ -2,33 +2,24 @@
 
 declare(strict_types=1);
 
-namespace CodeIgniterIconify\Config;
+namespace CodeIgniterIcons\Config;
 
 use CodeIgniter\Config\BaseService;
-use CodeIgniterIconify\Config\Iconify as IconifyConfig;
-use PHPIconify\Iconify;
+use CodeIgniterIcons\Config\Icons as IconsConfig;
+use PHPIcons\PHPIcons;
 
 class Services extends BaseService
 {
-    public static function iconify(bool $getShared = true): Iconify
+    public static function phpicons(bool $getShared = true): PHPIcons
     {
         if ($getShared) {
-            /** @var Iconify */
-            return static::getSharedInstance('iconify');
+            /** @var PHPIcons */
+            return static::getSharedInstance('phpicons');
         }
 
-        /** @var IconifyConfig $config */
-        $config = config('Iconify');
+        /** @var IconsConfig $iconsConfig */
+        $iconsConfig = config('Icons');
 
-        $options = [
-            'icons_folder' => $config->iconsFolder,
-            'default_pack' => $config->defaultPack,
-        ];
-
-        if ($config->apiHosts !== []) {
-            $options['api_hosts'] = $config->apiHosts;
-        }
-
-        return new Iconify($options);
+        return new PHPIcons($iconsConfig->phpIconsConfigPath);
     }
 }

@@ -1,9 +1,12 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/php
 {
-  "name": "PHP",
+  "name": "Codeigniter Icons",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+  "build": {
+    // Path is relataive to the devcontainer.json file.
+    "dockerfile": "Dockerfile"
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [8000],
   // Features to add to the dev container. More info: https://containers.dev/features.

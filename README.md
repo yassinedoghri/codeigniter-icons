@@ -1,20 +1,20 @@
-# CodeIgniter Iconify 🔥 🙂
+# CodeIgniter Icons 🔥 🙂
 
-[![Latest Stable Version](http://poser.pugx.org/yassinedoghri/codeigniter-iconify/v)](https://packagist.org/packages/yassinedoghri/codeigniter-iconify)
-[![Total Downloads](http://poser.pugx.org/yassinedoghri/codeigniter-iconify/downloads)](https://packagist.org/packages/yassinedoghri/codeigniter-iconify)
-[![Latest Unstable Version](http://poser.pugx.org/yassinedoghri/codeigniter-iconify/v/unstable)](https://packagist.org/packages/yassinedoghri/codeigniter-iconify)
-[![License](https://img.shields.io/github/license/yassinedoghri/codeigniter-iconify?color=green)](https://packagist.org/packages/yassinedoghri/codeigniter-iconify)
-[![PHP Version Require](http://poser.pugx.org/yassinedoghri/codeigniter-iconify/require/php)](https://packagist.org/packages/yassinedoghri/php-iconify)
+[![Latest Stable Version](http://poser.pugx.org/yassinedoghri/codeigniter-icons/v)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![Total Downloads](http://poser.pugx.org/yassinedoghri/codeigniter-icons/downloads)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![Latest Unstable Version](http://poser.pugx.org/yassinedoghri/codeigniter-icons/v/unstable)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![License](https://img.shields.io/github/license/yassinedoghri/codeigniter-icons?color=green)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![PHP Version Require](http://poser.pugx.org/yassinedoghri/codeigniter-icons/require/php)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
 
 A [CodeIgniter4](https://codeigniter.com/) library with convenient helper
 functions to render svg icons using
-[php-iconify](https://github.com/yassinedoghri/php-iconify).
+[php-icons](https://github.com/yassinedoghri/php-icons).
 
 ## 🚀 Getting started
 
 ### 0. Prerequisites
 
-Usage of CodeIgniter Iconify requires the following:
+Usage of CodeIgniter Icons requires the following:
 
 - A CodeIgniter 4.3.5+ based project
 - Composer for package management
@@ -23,20 +23,24 @@ Usage of CodeIgniter Iconify requires the following:
 ### 1. Install via composer
 
 ```sh
-composer require yassinedoghri/codeigniter-iconify
+composer require yassinedoghri/codeigniter-icons
 ```
 
 ### 2. Setup
 
-Add iconify helper to the `app/Config/Autoload.php` file:
+1. [init and configure PHPIcons](https://github.com/yassinedoghri/php-icons),
+   ie. create the PHPIcons config file.
+
+2. add icons helper to your `app/Config/Autoload.php` file:
 
 ```php
-public $helpers = [/*...other helpers...*/, 'iconify'];
+public $helpers = [/*...other helpers...*/, 'icons'];
 ```
 
 ### 3. Usage
 
-Use the `icon()` or `iconify()` helpers in your View files to render svg icons:
+Use the `icon(string $iconKey)` or `phpicons(string $iconKey)` helpers in your
+View files to render svg icons:
 
 ```php
 <?= icon('material-symbols:bolt') ?>
@@ -45,46 +49,20 @@ Use the `icon()` or `iconify()` helpers in your View files to render svg icons:
 // </svg>
 
 <?= icon('material-symbols:bolt', ['class' => 'text-2xl', "style" => "color: yellow;"]) ?>
-// <svg class="text-2xl" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-//      <path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z"/>
-// </svg>
+// <svg class="text-2xl" style="color: yellow;" [...]>...</svg>
 
-<?= iconify('material-symbols:bolt')
+<?= phpicons('material-symbols:bolt')
         ->attr('class', 'text-2xl')
         ->attr('style', 'color: yellow;') ?>
-// <svg class="text-2xl" style="color: yellow;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-//      <path fill="currentColor" d="m8 22l1-7H4l9-13h2l-1 8h6L10 22z"/>
-// </svg>
+// <svg class="text-2xl" style="color: yellow;" [...]>...</svg>
 ```
 
-#### Default Icon Pack
-
-> [!TIP]  
-> Using a consistent icon style throughout your app can help create a cohesive
-> look and feel.
-
-👉 This can be achieved by setting a default icon pack in your config
-([see configuration below](#⚙️-configuration)).
-
-```php
-// your app/Config/Iconify.php config file
-//...
-public $defaultPack = "material-symbols";
-//...
-```
-
-This way, no need to specify the icon pack when using the helpers!
-
-```diff
--<?= icon('material-symbols:bolt') ?>
-+<?= icon('bolt') ?>
-```
+For more usage info, see
+[php icons docs](https://github.com/yassinedoghri/php-icons).
 
 ## ⚙️ Configuration
 
-By default, CodeIgniter Iconify will use Iconify's public APIs to download icons
-and cache them into the `app/Resources/icons` folder. You may overwrite this
-config with your own `app/Config/Iconify.php` file:
+Checkout PHPIcons config reference to tweak things as you please.
 
 ```php
 // new file - app/Config/Iconify.php
@@ -99,9 +77,7 @@ use CodeIgniterIconify\Config\Iconify as CodeIgniterIconify;
 
 class Iconify extends CodeIgniterIconify
 {
-    public $apiHosts = [];
-    public $iconsFolder = APPPATH . 'Resources/icons';
-    public $defaultPack = "";
+    public string $phpIconsConfigPath = ROOTPATH . 'php-icons.php';
 }
 ```
 
