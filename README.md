@@ -1,14 +1,17 @@
-# CodeIgniter Icons 🔥 🙂
+<div align="center">
 
-[![Latest Stable Version](http://poser.pugx.org/yassinedoghri/codeigniter-icons/v)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
-[![Total Downloads](http://poser.pugx.org/yassinedoghri/codeigniter-icons/downloads)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
-[![Latest Unstable Version](http://poser.pugx.org/yassinedoghri/codeigniter-icons/v/unstable)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
-[![License](https://img.shields.io/github/license/yassinedoghri/codeigniter-icons?color=green)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
-[![PHP Version Require](http://poser.pugx.org/yassinedoghri/codeigniter-icons/require/php)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+# CodeIgniter Icons 🔥 🙂
 
 A [CodeIgniter4](https://codeigniter.com/) library with convenient helper
 functions to render svg icons using
 [php-icons](https://github.com/yassinedoghri/php-icons).
+
+[![Latest Stable Version](https://poser.pugx.org/yassinedoghri/codeigniter-icons/v)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![Total Downloads](https://poser.pugx.org/yassinedoghri/codeigniter-icons/downloads)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![License](https://img.shields.io/github/license/yassinedoghri/codeigniter-icons?color=green)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+[![PHP Version Require](https://poser.pugx.org/yassinedoghri/codeigniter-icons/require/php)](https://packagist.org/packages/yassinedoghri/codeigniter-icons)
+
+</div>
 
 ## 🚀 Getting started
 
@@ -65,7 +68,7 @@ For more usage info, see
 Checkout PHPIcons config reference to tweak things as you please.
 
 ```php
-// new file - app/Config/Iconify.php
+// new file - app/Config/Icons.php
 <?php
 
 declare(strict_types=1);
@@ -73,9 +76,9 @@ declare(strict_types=1);
 namespace Config;
 
 // ...
-use CodeIgniterIconify\Config\Iconify as CodeIgniterIconify;
+use CodeIgniterIcons\Config\Icons as CodeIgniterIcons;
 
-class Iconify extends CodeIgniterIconify
+class Icons extends CodeIgniterIcons
 {
     public string $phpIconsConfigPath = ROOTPATH . 'php-icons.php';
 }

@@ -1,1 +1,6 @@
 /vendor/
+
+/.pnpm-store/
+/node_modules/
+
+coverage.xml

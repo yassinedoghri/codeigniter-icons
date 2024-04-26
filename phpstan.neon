@@ -12,3 +12,6 @@ parameters:
 			- CodeIgniterIcons\Config
 		additionalServices:
 			- CodeIgniterIcons\Config\Services
+	ignoreErrors:
+		- '#Call to an undefined method Pest\\PendingCalls\\TestCall\:\:expect\(\)#'
+

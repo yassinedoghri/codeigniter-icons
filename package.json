@@ -1,0 +1,35 @@
+{
+  "name": "codeigniter-icons",
+  "version": "0.0.0-development",
+  "description": "A CodeIgniter4 library with convenient helper functions to render svg icons using yassinedoghri/php-icons.",
+  "private": true,
+  "author": {
+    "name": "Yassine Doghri",
+    "email": "yassine@doghri.fr",
+    "url": "https://yassinedoghri.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yassinedoghri/codeigniter-icons.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
