@@ -1,6 +1,6 @@
 {
   "name": "codeigniter-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CodeIgniter4 library with convenient helper functions to render svg icons using yassinedoghri/php-icons.",
   "private": true,
   "author": {

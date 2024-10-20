@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/yassinedoghri/codeigniter-icons/compare/v1.0.0...v1.0.1) (2024-10-20)
+
+### Internal
+
+- **helper:** remove phpicon function and return PHPIcons object with icon
+  function
+  ([4055460](https://github.com/yassinedoghri/codeigniter-icons/commit/4055460b1c719e23e14a378a310c737a7d766f58))
+
 # 1.0.0 (2024-09-29)
 
 ### Bug Fixes
