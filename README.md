@@ -42,8 +42,8 @@ public $helpers = [/*...other helpers...*/, 'icons'];
 
 ### 3. Usage
 
-Use the `icon(string $iconKey)` or `phpicons(string $iconKey)` helpers in your
-View files to render svg icons:
+Use the `icon(string $iconKey, array $attributes)` helper function in your View
+files to render svg icons:
 
 ```php
 <?= icon('material-symbols:bolt') ?>
@@ -54,7 +54,7 @@ View files to render svg icons:
 <?= icon('material-symbols:bolt', ['class' => 'text-2xl', "style" => "color: yellow;"]) ?>
 // <svg class="text-2xl" style="color: yellow;" [...]>...</svg>
 
-<?= phpicons('material-symbols:bolt')
+<?= icon('material-symbols:bolt')
         ->attr('class', 'text-2xl')
         ->attr('style', 'color: yellow;') ?>
 // <svg class="text-2xl" style="color: yellow;" [...]>...</svg>
